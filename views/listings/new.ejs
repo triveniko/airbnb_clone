@@ -4,7 +4,7 @@
     <div class="col-8 offset-2">
       <br />
       <br />
-      <h3>CREATE NEW LISTINGS</h3>
+      <h3>Create a new listing</h3>
       <form
         method="post"
         action="/listings"
@@ -40,8 +40,9 @@
         </div>
 
         <div class="mb-3">
-          <label for="image" class="form-label">Upload Listing Image</label>
+          <label for="image" class="form-label">Upload listing Image</label>
           <input name="listing[image]" type="file" class="form-control" />
+          required
         </div>
 
         <div class="row">
@@ -50,6 +51,7 @@
             <input
               name="listing[price]"
               placeholder="Enter Price"
+              type="Number"
               class="form-control"
               required
             />
